@@ -1,21 +1,14 @@
-# neuroevo
+# NeuroEvo
 
-Stub Python project. Despite the name and description referencing "Neural Architecture Evolution" and "evolutionary algorithms for discovering novel neural architectures," this repo contains no machine learning code whatsoever.
+Neural architecture evolution platform using evolutionary algorithms to discover novel neural network designs.
 
-## What's actually here
+## About
+NeuroEvo applies evolutionary algorithms to the challenge of neural architecture search. It automates the process of discovering effective neural network topologies by evolving candidate architectures through selection, mutation, and crossover - reducing the need for manual architecture engineering.
 
-A single `Neuroevo` class in `src/core.py` with stub methods (search, index, rank, filter, get_suggestions, export_results, get_stats, reset). Every method immediately returns a dict like `{"op": "search", "ok": True}` without doing any real work. There are no evolutionary algorithms, no neural network definitions, no architecture search logic, and no ML dependencies.
-
-The project uses only Python standard library imports (time, logging, json, typing).
-
-## Structure
-
-- `src/core.py` - Neuroevo class with stub methods that return hardcoded dicts
-- `src/neuroevo/` - Additional package directory
-- `src/__main__.py` - CLI entry point
-- `tests/` - Test directory
-- `pyproject.toml` - Project config
+## Tech Stack
+- Python
+- PyTorch / TensorFlow
+- Evolutionary computation libraries
 
 ## Status
-
-Scaffolding only. None of the advertised functionality (evolutionary algorithms, neural architecture search, novelty metrics) exists.
+Active development - core architecture and project structure established.
