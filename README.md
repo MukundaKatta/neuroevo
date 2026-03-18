@@ -1,43 +1,21 @@
 # neuroevo
 
-**NeuroEvo — Neural Architecture Evolution. Evolutionary algorithms for discovering novel neural architectures.**
+Stub Python project. Despite the name and description referencing "Neural Architecture Evolution" and "evolutionary algorithms for discovering novel neural architectures," this repo contains no machine learning code whatsoever.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single `Neuroevo` class in `src/core.py` with stub methods (search, index, rank, filter, get_suggestions, export_results, get_stats, reset). Every method immediately returns a dict like `{"op": "search", "ok": True}` without doing any real work. There are no evolutionary algorithms, no neural network definitions, no architecture search logic, and no ML dependencies.
 
-## Quick Start
-```python
-from src.core import Neuroevo
- instance = Neuroevo()
-r = instance.search(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing).
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Structure
 
-## API
-| Method | Description |
-|--------|-------------|
-| `search()` | Search |
-| `index()` | Index |
-| `rank()` | Rank |
-| `filter()` | Filter |
-| `get_suggestions()` | Get suggestions |
-| `export_results()` | Export results |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
+- `src/core.py` - Neuroevo class with stub methods that return hardcoded dicts
+- `src/neuroevo/` - Additional package directory
+- `src/__main__.py` - CLI entry point
+- `tests/` - Test directory
+- `pyproject.toml` - Project config
 
-## Test
-```bash
-pytest tests/ -v
-```
+## Status
 
-## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+Scaffolding only. None of the advertised functionality (evolutionary algorithms, neural architecture search, novelty metrics) exists.
